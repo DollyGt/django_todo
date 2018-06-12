@@ -18,7 +18,8 @@ from django.contrib import admin
 from home.views import get_index
 from accounts.views import login
 from accounts.views import register
-from accounts.views import logout
+from accounts.views import logout 
+from accounts.views import profile
 
 
 urlpatterns = [
@@ -27,4 +28,5 @@ urlpatterns = [
     url(r'^accounts/login$',login, name='login'),
     url(r'^accounts/register$',register, name='register'),
     url(r'^accounts/logout$',logout, name='logout'),
+    url(r'^accounts/profile$',profile, name='profile'),
 ]
