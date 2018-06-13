@@ -48,7 +48,7 @@ def register(request):
     return render(request, 'accounts/register.html', {'form': registration_form})
     
 def logout(request):
-    auth.logout(request)
+    auth.logout(request)  
     return redirect('/')
     
 def profile(request):
